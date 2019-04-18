@@ -1,0 +1,23 @@
+function areaOfFigures([arg1,arg2,arg3]){
+  let figure = String(arg1);
+  let a = Number(arg2);
+  let b = Number(arg3);
+  let area = 0.0;
+
+  if (figure == "square"){
+    area = a * a;
+    console.log(area)
+  }
+  else if (figure == "rectangle"){
+    area = a * b;
+   console.log(area);
+  }
+  else if (figure == "circle"){
+    area = a * a * Math.PI;
+    console.log(area);
+   }
+   else if (figure == "triangle"){
+    area = ((a * b) / 2);
+    console.log(area);
+   }
+}
