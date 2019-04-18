@@ -1,0 +1,82 @@
+function metricConverter([arg1,arg2,arg3]){
+let size = Number(arg1);
+let inMetric = String(arg2);
+let outMetric = String(arg3);
+
+let meter = 0.0;
+let result = 0.0;
+
+if (inMetric == "m")
+{
+    meter = size;
+}
+else if (inMetric == "mm")
+{
+    meter = size / 1000.0;
+}
+else if (inMetric == "cm")
+{
+    meter = size / 100.0;
+}
+else if (inMetric == "mi")
+{
+    meter = size / 0.000621371192;
+}
+else if (inMetric == "in")
+{
+    meter = size / 39.3700787;
+}
+else if (inMetric == "km")
+{
+    meter = size / 0.001;
+}
+else if (inMetric == "ft")
+{
+    meter = size / 3.2808399;
+}
+else if (inMetric == "yd")
+{
+     meter = size / 1.0936133;
+}
+if (outMetric == "m")
+{
+    result = meter;
+    console.log(result);
+}
+
+if (outMetric == "yd")
+{
+    result = meter * 1.0936133;
+    console.log(result);
+}
+else if (outMetric == "ft")
+{
+    result = meter * 3.2808399;
+    console.log(result);
+}
+else if (outMetric == "km")
+{
+    result = meter * 0.001;
+    console.log(result);
+}
+else if (outMetric == "in")
+{
+    result = meter * 39.3700787;
+    console.log(result);
+}
+else if (outMetric == "mi")
+{
+    result = meter * 0.000621371192;
+    console.log(result);
+}
+else if (outMetric == "cm")
+{
+    result = meter / 0.01;
+    console.log(result);
+}
+else if (outMetric == "mm")
+{
+    result = meter / 0.001;
+    console.log(result);
+}
+}
