@@ -1,0 +1,15 @@
+function numFrom100([arg1,arg2]){
+  let firstWord = String(arg1);
+  let secondWord = String(arg2);
+
+  let word = firstWord.toLowerCase();
+  let word2 = secondWord.toLowerCase();
+  
+  if (word == word2){
+    console.log("yes")
+  }
+  else{
+    console.log("no")
+  }
+
+}
