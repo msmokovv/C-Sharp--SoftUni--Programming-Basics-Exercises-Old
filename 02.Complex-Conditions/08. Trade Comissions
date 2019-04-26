@@ -1,0 +1,81 @@
+using System;
+
+namespace traaningg
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string city = Console.ReadLine().ToLower();
+            var sell = double.Parse(Console.ReadLine());
+
+            var comis = -1.00;
+            
+            if (city == "sofia")
+            {
+                if (0 <= sell && sell <= 500)
+                {
+                    comis = 0.05;
+                }
+                else if (500 < sell && sell <= 1000)
+                {
+                    comis = 0.07;
+                }
+                else if (1000 < sell && sell <= 10000)
+                {
+                    comis = 0.08;
+                }
+                else if (sell > 10000)
+                {
+                    comis = 0.12;
+                }
+            }
+            else if (city == "varna")
+            {
+                if (0 <= sell && sell <= 500)
+                {
+                    comis = 0.045000;
+                }
+                else if (500 < sell && sell <= 1000)
+                {
+                    comis = 0.075000;
+                }
+                else if (1000 < sell && sell <= 10000)
+                {
+                    comis = 0.10000;
+                }
+                else if (sell > 10000)
+                {
+                    comis = 0.13000;
+                }
+            }
+            else if (city == "plovdiv")
+            {
+                if (0 <= sell && sell <= 500)
+                {
+                    comis = 0.055;
+                }
+                else if (500 < sell && sell <= 1000)
+                {
+                    comis = 0.08;
+                }
+                else if (1000 < sell && sell <= 10000)
+                {
+                    comis = 0.12;
+                }
+                else if (sell > 10000)
+                {
+                    comis = 0.145;
+                }
+            }
+
+            if (comis >= 0)
+            {
+                Console.WriteLine("{0:f2}", sell * comis);
+            }
+            {
+                Console.WriteLine("error");
+            }
+        }
+    }
+}
