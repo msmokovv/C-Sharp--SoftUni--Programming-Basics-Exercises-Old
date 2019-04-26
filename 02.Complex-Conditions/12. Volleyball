@@ -1,0 +1,29 @@
+using System;
+
+namespace traaningg
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string yearType = Console.ReadLine();
+            double p = int.Parse(Console.ReadLine()); //бр празници без ликендите
+            double h = int.Parse(Console.ReadLine()); //пътувания до родния град
+            double yVGodinata = 48;
+            double yVSofia = (yVGodinata - h) * 3 / 4;
+
+            double gameInCity = h;
+            double gameVSofia = p * 2 / 3;
+
+            double all = yVSofia + gameInCity + gameVSofia;
+            double yearsss = 0;
+
+           if (yearType == "leap")
+            {
+                yearsss = (15 * all) / 100;
+            }
+            double final = Math.Truncate(yearsss + all);
+            Console.WriteLine(final);
+        }
+    }
+}
