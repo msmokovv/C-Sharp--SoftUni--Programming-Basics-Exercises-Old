@@ -1,0 +1,27 @@
+using System;
+namespace Calcolate1000DayOnEarth
+{
+    class Calcolate1000DayOnEarth
+    {
+        static void Main()
+        {
+            string project = Console.ReadLine().ToLower();
+            double r = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+
+            double full = r * c;
+            double income = 0;
+
+            switch(project)
+            {
+                case "premiere":
+                    income = full * 12; break;
+                case "normal":
+                    income = full * 7.50; break;
+                case "discount":
+                    income = full * 5.00; break;
+            }
+            Console.WriteLine($"{income:f2}" +  " leva");
+        }
+    }
+}
