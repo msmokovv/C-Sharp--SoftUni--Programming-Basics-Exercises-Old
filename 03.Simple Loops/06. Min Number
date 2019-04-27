@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _03.On_Time_for_the_Exam
+{
+    class OnTimeForTheExam
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            int min = int.MaxValue;
+
+            for (int i = 0; i < n; i++)
+            {
+                int chislo = int.Parse(Console.ReadLine());
+                if (chislo < min)
+                {
+                    min = chislo;
+                }
+            }
+            Console.WriteLine(min);
+        }
+    }
+}
