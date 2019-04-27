@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _03.On_Time_for_the_Exam
+{
+    class OnTimeForTheExam
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Latin alphabet:");
+            for (char number = 'a'; number <= 'z'; number++)
+            {
+                {
+                    Console.WriteLine(" " + number);
+                }
+            }
+        }
+    }
+}
